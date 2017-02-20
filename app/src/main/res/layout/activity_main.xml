@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+<TextView
+    android:paddingTop="20dp"
+    android:layout_gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="自定义方式继承ViewFlipper实现"
+    android:textSize="20dp"
+    />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/tbtv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textColor="#FF0000"
+            android:text="淘宝\n头条" />
+
+        <com.veyron.www.viewflipperdemo.View.UpView
+            android:id="@+id/upview1"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tbtv"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"></com.veyron.www.viewflipperdemo.View.UpView>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="布局中直接使用ViewFlipper设置属性实现"
+        android:textSize="20dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:id="@+id/tbtv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:textSize="22sp"
+            android:textColor="#FF0000"
+            android:text="淘宝\n头条" />
+
+
+        <ViewFlipper
+            android:id="@+id/upview2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/tbtv2"
+            android:layout_centerVertical="true"
+            android:autoStart="true"
+            android:inAnimation="@anim/anim_in"
+            android:outAnimation="@anim/anim_out"
+            android:flipInterval="2000"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"></ViewFlipper>
+    </RelativeLayout>
+</LinearLayout>
