@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+
             //进行对控件赋值
             tv1.setText(data.get(i).toString());
             if (data.size() > i + 1) {
@@ -97,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             //添加到循环滚动数组里面去
-            views.add(moreView);   //也就是滚动的view集合
+            views.add(moreView);   //也就是滚动的item_view
         }
     }
     /**
