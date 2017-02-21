@@ -2,7 +2,7 @@
 Imitate Taobao scroll up the banner by using ViewFlipper
 
 ## Screenshots
-<img src="screenshots/GIF1.gif" width="300" align="right" hspace="20">
+<img src="screenshots/GIF11.gif" width="300" align="right" hspace="20">
 <img src="screenshots/1.png" width="25%" />
 
 
